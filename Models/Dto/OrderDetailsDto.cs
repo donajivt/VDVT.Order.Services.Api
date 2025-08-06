@@ -1,18 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using VDVT.Order.Services.Api.Models.Dto;
 
-namespace VDVT.Order.Services.Api.Models
+namespace VDVT.Order.Services.Api.Models.Dto
 {
-    public class OrderDetails
+    public class OrderDetailsDto
     {
-        [Key]
         public int OrderDetailsId { get; set; }
         public int OrderHeaderId { get; set; }
-        [ForeignKey("OrderHeaderId")]
         public OrderHeader OrderHeader { get; set; }
         public int ProductId { get; set; }
-        [NotMapped]
         public ProductDto ProductDto { get; set; }
         public int Count { get; set; }
         public string ProductName { get; set; }
