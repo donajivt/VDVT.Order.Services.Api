@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using VDVT.Order.Services.Api.Models;
 
 namespace VDVT.Order.Services.Api.Data
 {
